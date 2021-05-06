@@ -8,7 +8,12 @@
         <meta charset="utf-8">
         <title>PORTFOLIO PAGE</title>
         <link rel="stylesheet" type="text/css" href="sheriffbaba.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/fontisto/fontisto.min.css" rel="stylesheet" >
+        
     </head>
 
 
@@ -19,13 +24,16 @@
 
             <h2 class="header">FALANA SHERIFF</h2>
 
-            <div id="icon"></div>
+            <div id="icon">
+                <i style="font-size: 20px;" class="fi fi-nav-icon" id="menu"></i>
+                <i style="font-size: 20px;" class="fi fi-close-a" id="close"></i>
+            </div>
 
             
             <ul>
-                <li>chelsea</li>
-                <li>tottenham</li>
-                <li>leicester</li>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#services"><li>Services</li></a>
+                <a href="#contacts"><li>Contacts</li></a>
             </ul>
 
         </div>
@@ -35,25 +43,23 @@
 
         <div id="word">
 
-            <p class="lander">Hi There,</p>
-            <p class="lander">I'm Sheriff.</p>
+            <p class="lander" id="hi">Hi There,</p>
+            <p class="lander" id="im">I'm Sheriff.</p>
 
         </div>
 
 
         <div id="dropd">
             <ul>
-                <li>chelsea</li>
-                <li>tottenham</li>
-                <li>leicester</li>
-                <li>southampton</li>
-                <li>man city</li>
+                <a href="#projects"><li>Projects</li></a>
+                <a href="#services"><li>Services</li></a>
+                <a href="#contacts"><li>Contacts</li></a>
             </ul>
         </div>
       
 
         <br><br>
-        <a href="#word"><div class="scroll"> </div></a>
+        <a href="#word"><div class="scroll"><i style="color: floralwhite; padding: 15px;" class="fi fi-angle-dobule-up"></i> </div></a>
         
         <br>
             
@@ -70,7 +76,7 @@
                 <br><br>
 
         <div>
-            <img src="olatunji.png" alt="self" class="self-img">
+            <img src="tunji.png" alt="self" class="self-img">
         </div>
 
 
@@ -86,7 +92,7 @@
         
         <br><br><br><br><br>
             <h1>SAMPLE PROJECTS</h1>
-        <div class="tray1">
+        <div id="projects">
             <div class="frame1">  <div class="frame"> <a target="_blank" href="sample.html"><img src="snipe1.png" alt="snipe1" class="site-img"></a> </div> <h6>jkkhxjdf ugxhjng ul ihisdg uguliuhsd </h6> </div>
             <div class="frame1">  <div class="frame"> <a target="_blank" href="responsivesidebar.html"><img src="snipe2.png" alt="snipe2" class="site-img"></a> </div> <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolorum pariatur ipsa, voluptates quia inventore quod perspiciatis suscipit iure libero alias dignissimos. Recusandae eligendi ipsa commodi, cupiditate repellat ea iste!</h6>  </div>
             <div class="frame1">  <div class="frame"> <a target="_blank" href="assignment2.html"><img src="snipe3.png" alt="snipe3" class="site-img"></a> </div> <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsum temporibus ex aperiam voluptates eveniet quis ea ipsam magnam error? Dolorem perferendis qui numquam reiciendis cum totam expedita, sequi error!</h6> </div>
@@ -98,14 +104,14 @@
         <br><br>      <br><br>
 
             <h1>CONTACTS</h1>
-        <div class="conta2">
+        <div id="contacts">
 
 
-           <div class="smedia1"></div>
-           <div class="smedia2"></div>
-           <div class="smedia3"></div>
-           <div class="smedia4"></div>
-           <div class="smedia5"></div>
+            <a target="_blank" href="https://www.github.com/olatunji-20"><div class="smedia4"><i class="fi fi-github"></i></div></a>
+            <a target="_blank" href="https://www.linkedin.com/in/falana-sheriff-16767b1b9"><div class="smedia2"><i class="fi fi-linkedin"></i></div></a>
+            <a target="_blank" href="https://www.facebook.com/falana.sheriffdeen"><div class="smedia1"><i class="fi fi-facebook"></i></div></a>
+            <a target="_blank" href="http://www.twitter.com/Olatunji_20"><div class="smedia3"><i class="fi fi-twitter"></i></div></a>
+            <a target="_blank" href="https://wa.me/+2348065840255"><div class="smedia5"><i class="fi fi-whatsapp"></i></div></a>
 
         
         </div>
@@ -114,7 +120,7 @@
 
         <br><br>
             <h1>SERVICES</h1>
-        <div class="tray2">
+        <div id="services">
             <div class="frame2"><img src="phone.PNG" alt="pic" class="phoneimg"></div>
             <div class="frame2"><img src="phone.PNG" alt="pic" class="phoneimg"></div>
             <div class="frame2"><img src="phone.PNG" alt="pic" class="phoneimg"></div>
@@ -138,16 +144,61 @@
 
             $(document).ready(function() {
 
-                $("#dropd").hide();
 
+                //To animate landing page
 
-                $("#icon").click(function() {
-                    $("#dropd").slideToggle(500);
+                $("#hi").hide();
+                $("#im").hide();
+
+                $("#hi").show(1000);
+                $("#im").show(1500);
+
+                
+
+                //This animates the opacity of the background image on the landing page.
+
+                $("#word").animate({
+                    opacity: '0.7'
+                }, 3000);
+
+                $("#word").mouseenter(function() {
+                    $("#word").css("opacity", "0.7", 3000);
+                });
+
+                $("#word").mouseleave(function() {
+                    $("#word").css("opacity", "1", 3000);
                 });
 
 
 
+                
 
+
+                //drop down menu and to change the menu icons onclick
+
+               $("#dropd").hide();
+
+               $("#close").hide();
+               
+               $("#menu").click(function() {
+                    $("#dropd").slideDown(600, function() {
+                        $("#menu").hide(100, function() {
+                            $("#close").show(100);
+                        });
+                    });
+                });
+
+
+                $("#close").click(function() {
+                    $("#dropd").slideUp(600, function() {
+                        $("#close").hide(100, function() {
+                            $("#menu").show(100);
+                        });
+                    });
+                });
+
+               
+                //to animate(move up and down) the social media containers
 
                 $(".smedia1").mouseenter(function () {
                     $(".smedia1").animate({
@@ -204,25 +255,12 @@
 
                 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             });
 
 
                 
+
+
 
 
 

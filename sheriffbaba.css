@@ -3,10 +3,12 @@
 }
 
 body {
-    background-color: cornsilk;
+    background-color: whitesmoke;
+    color: #404044;
     text-align: center;
     padding: 0px;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -16,11 +18,11 @@ html {
 .header {
     display: inline-block;
     margin-left: 40px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .navbar {
-    background-color: crimson;
+    background-color: #8c8c8c;
     text-align: left;
     width: 100%;
     height: 70px;
@@ -28,6 +30,7 @@ html {
     margin: 0px;
     position: fixed;
     z-index: 9;
+    box-shadow: 1px 1px 7px 3px #282835;
 }
 
 #icon {
@@ -51,7 +54,7 @@ html {
 }
 
 .navbar ul {
-    background-color: seagreen;
+    background-color: #e6e6e6;
     padding: 2px;
     float: right;
     margin-right: 30px;
@@ -62,7 +65,8 @@ html {
     display: inline-block;
     width: 120px;
     padding: 5px;
-    background-color: sandybrown;
+    background-color: #8c8c8c;
+    color: #e6e6e6;
     text-align: center;
     font-size: 15px;
     font-weight: bolder;
@@ -70,12 +74,14 @@ html {
 }
 
 .navbar ul li:hover {
-    background-color: darkblue;
+    background-color: #404040;
+    color: #8c8c8c;
     transition: 0.3s;
 }
 
 #word {
-    background-color: aqua;
+    background-image: url("baloon.png");
+    opacity: 1;
     height: 100vh;
     width: 50vw;
     margin: 0px auto;
@@ -83,18 +89,19 @@ html {
     padding: 20% 0px;
     position: relative;
     display: inline-block;
-    box-shadow: 10px 10px 20px 10px greenyellow;
+    box-shadow: 2px 4px 6px 4px #282835;
 }
 
 .lander {
     font-size: 50px;
     font-weight: bolder;
+    font-family: sacramento;
 }
 
 .scroll {
     width: 60px;
     height: 60px;
-    background-color: brown;
+    background-color:  #8c8c8c;
     color: whitesmoke;
     border-radius: 50%;
     position: fixed;
@@ -102,15 +109,19 @@ html {
     float: right;
     right: 30px;
     bottom: 40px;
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 3px 4px #404040;
 }
 
 h1 {
     font-size: 50px;
+    font-family: sacramento;
+    font-weight: bolder;
+    text-shadow: 2px 5px 4px;
 }
 
 .writer {
-    background-color: salmon;
+    background-color: #e6e6e6;
     width: 500px;
     height: auto;
     margin: 0px auto;
@@ -118,26 +129,27 @@ h1 {
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
-    box-shadow: 10px 10px 20px 10px greenyellow;
+    box-shadow:  2px 4px 6px 4px #282835;
 }
 
 .self-img {
-    width: 300px;
+    width: 236px;
     height: 500px;
     margin: 0px auto;
-    box-shadow: 10px 10px 20px 10px greenyellow;
+    box-shadow: 2px 4px 6px 4px  #282835;
 }
 
 .conta1 {
-    background-color: lightcoral;
+    background-color: #e6e6e6;
     width: 70%;
-    height: 300px;  
+    height: 300px;
+    padding: 30px;
     margin: 0px auto;
-    box-shadow: 10px 10px 20px 10px red;
+    box-shadow: 2px 4px 6px 4px #282835;
 }
 
-.tray1 {
-    background-color: darkgoldenrod;
+#projects {
+    background-color: #e6e6e6;
     height: auto;
     width: 90%;
     margin: 0px auto;
@@ -150,17 +162,17 @@ h1 {
 }
 
 .frame1 {
-    background-color: lawngreen;
+    background-color: #f2f2f2;
     width: 22%;
     height: 410px;
     border-radius: 10px;
     margin: 20px auto;
     text-align: center;
-    box-shadow: 5px 15px 15px floralwhite;
+    box-shadow:  2px 4px 6px 4px #282835;
 }
 
 .frame {
-    background-color: salmon;
+    background-color: red;
     width: 95%;
     height: 230px;
     border-radius: 10px;
@@ -174,18 +186,16 @@ h1 {
 }
 
 .site-img:hover {
-    border: lawngreen solid 8px;
+    border: #ffddcc solid 8px;
     transition: .3s;
 }
 
-
-
-.conta2 {
-    background-color: lightcoral;
+#contacts {
+    background-color: #e6e6e6;
     width: 70%;
     height: auto;  
     margin: 0px auto;
-    box-shadow: 10px 10px 20px 10px red;
+    box-shadow: 2px 4px 6px 4px #282835;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -193,19 +203,20 @@ h1 {
 }
 
 .smedia1, .smedia2, .smedia3, .smedia4, .smedia5 {
-    background-color:rgb(58, 158, 184);
-    width: 80px;
-    height: 80px;
-    margin: 20px;
+    background-color:#f2f2f2;
+    color: #242429;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
     border-radius: 50%;
     display: block;
     position: relative;
+    font-size: 45px;
+    padding: 10px;
 }
 
-
-
-.tray2 {
-    background-color: aqua;
+#services {
+    background-color: #e6e6e6;
     height: auto;
     width: 90%;
     margin: 0px auto;
@@ -218,16 +229,15 @@ h1 {
 }
 
 .frame2 {
-    background-color: rgb(231, 190, 23);
+    background-color: #f2f2f2;
     width: 25%;
     height: 250px;
     margin: 10px;
     border-radius: 15px;
     text-align: center;
     padding-top: 25px;
-    box-shadow: 10px 10px 20px 10px navy;
+    box-shadow: 2px 4px 6px 4px #282835;
 }
-
 
 .phoneimg {
     width: 200px;
@@ -241,9 +251,9 @@ h1 {
 }
 
 .footer {
-    background-color: firebrick;
+    background-color: #8c8c8c;
     width: 100%;
-    height: 60px;
+    height: 70px;
     padding: 5px;
 }
 
@@ -258,16 +268,19 @@ h1 {
                     box-sizing: border-box;
                 }
 
+                h1 {
+                    font-size: 40px;
+                }
               
 
                 .header {
                     margin-left: 10px;
-                    font-size: 20px;
+                    font-size: 25px;
                 }
 
                 #icon {
-                    width: 25px;
-                    height: 25px;
+                    width: auto;
+                    height: auto;
                     background-color: floralwhite;
                     display: inline;
                     z-index: 9;
@@ -277,6 +290,7 @@ h1 {
 
                 #word {
                     display: inline-block;
+                    width: 60vw;
                 }
 
                 #dropd {
@@ -291,7 +305,6 @@ h1 {
                     position: fixed;
                     right: 0px;
                     text-align: left;
-                    box-shadow: 10px 10px 20px 10px fuchsia;
                 }
 
                 #dropd ul li {
@@ -314,10 +327,10 @@ h1 {
                 }
 
                 .scroll {
-                    width: 50px;
-                    height: 50px;
+                    width: 60px;
+                    height: 60px;
                     right: 5px;
-                    bottom: 20px;
+                    bottom: 30px;
                 }
 
                 .writer h3 {
@@ -334,11 +347,11 @@ h1 {
 
 
                 .self-img {
-                    width: 200Px;
-                    height: 370px;
+                    width: 236Px;
+                    height: 500px;
                 }
 
-                .tray1 {
+                #projects {
                     flex-direction: column;
                 }
 
@@ -346,7 +359,7 @@ h1 {
                     width: 90%;
                 }
 
-                .tray2{
+                #services{
                     width: 90%;
                     margin: 0px auto;
                     display: flex;
@@ -385,21 +398,20 @@ h1 {
                     padding: 20px;
                 }
 
-                .conta2 {
-                    width: 40%;
+                #contacts {
+                    width: 30%;
                     height: auto;
                     flex-direction: column;
                     justify-content: center;
                 }
 
                 .smedia1, .smedia2, .smedia3, .smedia4, .smedia5 {
-                    width: 60px;
-                    height: 60px;
+                    width: 50px;
+                    height: 50px;
                     margin: 15px auto;
+                    font-size: 30px;
+                    padding: 10px;
                 }
-
-
-
 
 
             }
